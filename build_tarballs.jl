@@ -10,6 +10,9 @@ sources = [
     "https://github.com/ampl/coin/archive/v20170826.tar.gz" =>
     "b3c7395c22552614107161e1672c232a4fce4effca409863814a7fe623997651",
 
+    # BLAS for Bonmin build
+    "http://www.coin-or.org/BuildTools/Blas/blas-20130815.tgz" =>
+    "ea87df6dc44829ee0a1733226d130c550b17a0bc51c8dbfcd662fb15520b23b5",
 ]
 
 # Bash recipe for building across all platforms
@@ -40,12 +43,12 @@ products(prefix) = [
     LibraryProduct(prefix, "libCbcSolver", :libCbcSolver),
     LibraryProduct(prefix, "libipopt", :libipopt),
     LibraryProduct(prefix, "libOsi", :libOsi),
-#    ExecutableProduct(prefix, ""),
+    ExecutableProduct(prefix, "cbc", :cbc),
     LibraryProduct(prefix, "libCoinUtils", :libCoinUtils),
     LibraryProduct(prefix, "libCgl", :libCgl),
     LibraryProduct(prefix, "libOsiCbc", :libOsiCbc),
     LibraryProduct(prefix, "libOsiCommonTests", :libOsiCommonTests),
-#    ExecutableProduct(prefix, ""),
+    ExecutableProduct(prefix, "couenne", :couenne),
     LibraryProduct(prefix, "libCouenne", :libCouenne),
     LibraryProduct(prefix, "libOsiClp", :libOsiClp),
     LibraryProduct(prefix, "libbonmin", :libbonmin),

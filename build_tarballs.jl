@@ -11,8 +11,8 @@ sources = [
     "b3c7395c22552614107161e1672c232a4fce4effca409863814a7fe623997651",
 
     # BLAS for Bonmin build
-    "http://www.coin-or.org/BuildTools/Blas/blas-20130815.tgz" =>
-    "ea87df6dc44829ee0a1733226d130c550b17a0bc51c8dbfcd662fb15520b23b5",
+    "https://www.coin-or.org/download/source/BuildTools/BuildTools-Blas-1.0.7.tgz" =>
+    "4fe4eaa46f82ef3da125401e312dd5a2bc18b38f5b09e547775e8edadd1826ba",
 ]
 
 # Bash recipe for building across all platforms
